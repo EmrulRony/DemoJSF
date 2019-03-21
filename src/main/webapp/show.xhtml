@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"> 
+
+<h:head>Showing animals...</h:head> 
+<h:body>
+<br></br>
+Animal type: <h:outputText value="#{animalBean.animalType}" /><br></br>
+Animal number: <h:outputText value="#{animalBean.animalTotalNum}" /><br></br>
+Person id: <h:outputText value="#{animalBean.person.personId}" />
+Animal from animal list....
+<h:outputText value="#{animalBean.animalList[1]}" /><br/>
+Animal from animal Map.... 
+<h:outputText value="#{animalBean.animalMap['1']}"/><br/>
+
+Showing application bean randowm number<br/>
+<h:outputText value="#{animalBean.random}"/><br/>
+Showing session bean random number <br/>
+<h:outputText value="#{animalBean.sessionBean.random}"/><br></br>
+
+Show application bean random number <br></br>
+<h:outputText value="#{animalBean.appBean.random}"/>
+</h:body> 
+</html>
