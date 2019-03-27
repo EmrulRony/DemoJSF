@@ -10,6 +10,10 @@ import java.io.Serializable;
 @SessionScoped
 public class MySessionBean implements Serializable {
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private int random= new Random().nextInt();
 	
 	public  MySessionBean() {
